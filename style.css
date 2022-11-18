@@ -56,7 +56,7 @@ body {
     /* margin-bottom: 2rem; */
 }
 
-button {
+.btn {
     border: none;
     border-radius: 0.2rem;
     padding-inline: 1rem;
@@ -69,16 +69,16 @@ button {
     transition: background-color color;
 }
 
-button:hover {
+.btn:hover {
     background-color: whitesmoke;
     border-color: gray;
 }
 
-button.red-border {
+.btn.red-border {
     border: 1px solid red;
 }
 
-button.red-border:hover {
+.btn.red-border:hover {
     background-color: rgba(255, 0, 0, 0.5);
     color: white;
 }
@@ -149,7 +149,6 @@ button.red-border:hover {
     font-size: 0.8rem;
 }
 
-
 .add-new-torrent-place {
     height: 5rem;
     border: 2px lightgray dashed;
@@ -176,4 +175,39 @@ button.red-border:hover {
     flex-grow: 1;
     height: 2rem;
     width: 100%;
+}
+
+.icon {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+
+    transition: filter 0.1s;
+}
+
+.icon:hover {
+    filter: opacity(0.5);
+}
+
+.download-button {
+    color: green;
+}
+
+.play-button{
+    color: green;
+}
+
+.pause-button {
+    color: gray;
+}
+
+.remove-icon {
+    color: red;
+}
+
+.default {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
